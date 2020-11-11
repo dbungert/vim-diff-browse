@@ -269,6 +269,8 @@ function! s:DiffBrowse(args)
 	execute ':e' l:tmpfile
 
 	call s:ProcessDiff(l:tmpfile, l:mode)
+
+	" vim handles delete(l:tmpfile) automatically
 endfunction
 
 " }}}
